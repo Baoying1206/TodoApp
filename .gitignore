@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+.env
+*.env
+.venv/
+venv/
+*.db
+*.sqlite3
+fastapienv
+
+# Node
+node_modules/
+npm-debug.log*
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# macOS
+.DS_Store
+learning_history/
+
+dist/
+build/
+coverage/
+htmlcov/
+pytest_cache/
+__pypackages__/
+test/test_example.py

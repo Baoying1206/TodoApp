@@ -5,23 +5,25 @@ User registration and login with hashed passwords
 
 Create, read, update, and delete todo items
 
-SQLite database with SQLAlchemy ORM
+MySQL database with SQLAlchemy ORM
 
-Database migrations using Alembic
+SQLite used as an isolated test database
 
-Organized structure with routers, templates, and static files
+Database migrations managed by Alembic
+
+Organized structure with routers, templates and static files
 
 Simple HTML interface rendered by Jinja2
 
 ## Installation and Setup
-### Clone the repository
+Clone the repository:
    ```bash
    git clone https://github.com/Baoying1206/TodoApp.git
    cd TodoApp
    ```
-### Environment Setup
+Environment Setup:
 1. Create a `.env` file based on `.env.example`
-2. Install dependencies  
+2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
@@ -43,5 +45,18 @@ Start the server:
 Then open the browser at:
    ```bash
    http://127.0.0.1:8000
+   ```
+## Testing
+All test scripts are located in the test/ directory.
+
+The project uses pytest for unit testing.
+
+Run all tests:
+   ```bash
+   pytest -v
+   ```
+Run a specific test file:
+   ```bash
+   pytest test/test_todo.py -v
    ```
 
